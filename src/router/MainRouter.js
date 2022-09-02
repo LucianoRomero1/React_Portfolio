@@ -7,6 +7,7 @@ import { Home } from '../components/Home';
 import { Footer } from '../components/layout/Footer';
 import { HeaderNav } from '../components/layout/HeaderNav';
 import { Portfolio } from '../components/Portfolio';
+import { Project } from '../components/Project';
 import { Services } from '../components/Services';
 
 export const MainRouter = () => {
@@ -26,6 +27,7 @@ export const MainRouter = () => {
           <Route path='/services' element={<Services />}></Route>
           <Route path='/curriculum' element={<Curriculum />}></Route>
           <Route path='/contact' element={<Contact />}></Route>
+          <Route path='/project/:id' element={<Project />}></Route>
           <Route path='*' element={<Error />} />
         </Routes>
       </section>

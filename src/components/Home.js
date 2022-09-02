@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import { WorkList } from './WorkList'
 
 export const Home = () => {
   return (
@@ -13,9 +14,7 @@ export const Home = () => {
       </h3>
       <section className='last-works'>
         <h3 className='heading'>Some of my projects: </h3>
-        <div className='works'>
-
-        </div>
+        <WorkList limit='2' />
       </section>
     </div>
   )
